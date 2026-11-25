@@ -1,0 +1,133 @@
+[12:59:34] SETTER    0xbD3212A584352Bf837362679811dEC12d1694906
+           ANA       0x8059d34B35Adb664De1849a834e5c9bc695aF617
+           BO        0xF668967a62006dF1E44Bac7616Cc75E60Add4e09
+           CY        0xaae872C2F6aFE3DC9843B8d1E7705114EbA72C7A
+           STRANGER  0xA9F9754c971826d2B2A99C0EcDA7de0EEfa7225d
+
+[12:59:34] ---- phase A: deploy, deposits, the quiz, the entries and the refusals code can make
+      [13:00:19] SETTER deploy keyed.py  0x690be26c44d8ca606631191bcf0150f70abda356fee69e8562522e9401b23c19  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  0xaF11AA533eD8048c70936Fdf0D06ada1b74FddC3
+PASS  SETTER deploys contracts/keyed.py with quoted fees: FINALIZED, FINISHED_WITH_RETURN  - 3 agree, 0 disagree, 2 idle  0xaF11AA533eD8048c70936Fdf0D06ada1b74FddC3
+      [13:00:59] SETTER deposit() +0.4 GEN  0x5de0923f8ffbbe09c1b85b9e721d283c77fc9fbc45137084541c7291b8cc218f  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630250002823
+PASS  SETTER deposits 0.4 GEN of credit, the bond  - 3 agree, 0 disagree, 2 idle  {"ok": true, "address": "0xbd3212a584352bf837362679811dec12d1694906", "added": "400000000000000000",
+      [13:01:41] ANA deposit() +0.05 GEN  0x7d84b95000c20e383b919854605cd3645039b8cff9bce820e8919a6fd33cf63f  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630250002823
+PASS  ANA deposits 0.05 GEN of credit, one dispute bond  - 3 agree, 0 disagree, 2 idle
+      [13:02:21] BO deposit() +0.05 GEN  0xde8e2b375cda63552d841303f52b4c8fd7a4ccdd685b425d85ddbd388bb9bbb3  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630750002823
+PASS  BO deposits 0.05 GEN of credit, one dispute bond  - 3 agree, 0 disagree, 2 idle
+      [13:03:01] CY deposit() +0.05 GEN  0x0cd051a6566faf2c125724552bc420c9d63a41926d02da1c7f9ca6057966d4bb  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630750002823
+PASS  CY deposits 0.05 GEN of credit, one dispute bond  - 3 agree, 0 disagree, 2 idle
+      [13:03:43] SETTER open_quiz(General knowledge, round o, Which planet in our solar , 100000000000000000, 400000000000000000, 50000000000000000, 1000, 1500, 1500, 2400, ae3325d662a49df6f27991e4e0)  0xe8369acd2a0481081dce264ac37a22bd9eb38aa776f6f8da5f6caccd907987eb  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78642750002823
+PASS  SETTER opens Q1, "General knowledge, round one": four questions, the key committed, the 0.4 GEN bond staked from credit  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "setter": "0xbd3212a584352bf837362679811dec12d1694906", "questions": 4, "fee": "100000000000000000", "bond": "400
+      [13:04:25] SETTER enter(Q1, aaaaaaaaaaaaaaaaaaaaaaaaaa) +0.1 GEN  0x2e7fe1fa4d19c237d8d833b669f1dc6e25ffbfcdf322e679802e6a1af6f5e3c5  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126304500002823
+PASS  SETTER tries to take its own quiz: refused, the 0.1 GEN back in the same transaction  - 3 agree, 0 disagree, 2 idle  the setter of Q1 may not take it
+      [13:05:14] STRANGER enter(Q1, bbbbbbbbbbbbbbbbbbbbbbbbbb) +0.05 GEN  0xd282f936b0cd7acafd60d304b5b9c26893f23625499364b9b020269b410de6eb  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126304500002823
+PASS  STRANGER pays half the fee: refused, the 0.05 GEN back  - 3 agree, 0 disagree, 2 idle  the entry fee of Q1 is 100000000000000000 atto, sent with the call
+      [13:05:57] ANA enter(Q1, be193acc5ba162c99690336ea3) +0.1 GEN  0x4cad96f25d56aa41f0fc354a31ba61dbf86539144c0bbe9f0d223cd28f8d76e5  FINALIZED FINISHED_WITH_RETURN  4 agree, 0 disagree, 1 idle  fee 78634750003529
+PASS  ANA enters Q1 with a sealed answer sheet, paying 0.1 GEN  - 4 agree, 0 disagree, 1 idle  {"ok": true, "quiz": "Q1", "taker": "0x8059d34b35adb664de1849a834e5c9bc695af617", "paid": "100000000
+      [13:06:38] BO enter(Q1, 41e9648ef50d2d01054f7e1e6c) +0.1 GEN  0xaf011100cbde2424227d51f75d97d46da17055fcf269e215734af02e728489c9  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78634750002823
+PASS  BO enters Q1 with a sealed answer sheet, paying 0.1 GEN  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0xf668967a62006df1e44bac7616cc75e60add4e09", "paid": "100000000
+      [13:07:24] CY enter(Q1, c22a74619aadc6571a6e99d77c) +0.1 GEN  0x8676a1e982cf599be7104e2940214f03581927da7c93e22908cfd23f2120cd53  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78635000002823
+PASS  CY enters Q1 with a sealed answer sheet, paying 0.1 GEN  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0xaae872c2f6afe3dc9843b8d1e7705114eba72c7a", "paid": "100000000
+      [13:08:05] SETTER reveal_key(Q1, BAAB, keyed-d9d4c1912bc930e877d7)  0x9ca3921ea2ed20731d22b08ab18abe981288db0161b54d8465a45b90d7c2fc0f  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  SETTER tries to reveal the key while entries are open: refused  - 3 agree, 0 disagree, 2 idle  [EXPECTED] Q1 takes entries until 1795613284; the key is revealed after that
+      [13:08:46] STRANGER reveal_key(Q1, BAAB, keyed-d9d4c1912bc930e877d7)  0x1ce00c52955363f045113a3dc4415d6806a0907295975a6d64862b71e6687650  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  STRANGER tries to reveal the key: refused  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only the setter of Q1 may reveal its key
+
+[13:08:46] ---- phase B: entries close, the key, the seals, three disputes
+      [13:08:47] waiting 1178 s, by the chain clock, for close_at of Q1 to pass
+      [13:29:10] STRANGER enter(Q1, cccccccccccccccccccccccccc) +0.1 GEN  0xaf23424dbaf57c56a118dd1c707ea63ce91764b8f7b26f011dab336e9463e539  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126304500002823
+PASS  STRANGER tries to enter after the close: refused, the 0.1 GEN back  - 3 agree, 0 disagree, 2 idle  Q1 closed to entries at 1795613284
+      [13:30:00] SETTER reveal_key(Q1, BAAB, keyed-d9d4c1912bc930e877d7)  0x2fc2dfd57b0f3b2c7b08ff3930c829ffd32ea0a27bc8d5d50a306371a0a80958  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  SETTER reveals with the wrong salt: refused, the commitment does not match  - 3 agree, 0 disagree, 2 idle  [EXPECTED] this key and salt do not match the commitment of Q1
+      [13:30:47] SETTER reveal_key(Q1, BAAB, keyed-d9d4c1912bc930e877d7)  0x5a98e0e53051f5ddc7cb21ec22a2a058364bc8fd80928229d8d2330ddc1e13d2  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78628500002823
+PASS  SETTER reveals the key BAAB: it matches the commitment  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "key": "BAAB", "revealed_at": 1795613402, "dispute_end": 1795615802}
+      [13:31:28] ANA reveal_answers(Q1, BBBB, ana-f69f65b9cbe1f6f9)  0x1ed6fa893a8f2966075c0429ba00872b5507c404e34d8a1434bce3456d38eb07  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78631000002823
+PASS  ANA opens its seal: BBBB  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0x8059d34b35adb664de1849a834e5c9bc695af617", "answers": "BBBB", "score_now": 2}
+      [13:32:21] BO reveal_answers(Q1, AAAB, bo-35d8d17d1ae64359)  0xdb4b2fe8ddc3fa3d639d43b9086474d427a57516960f7f516ce96a17edc91689  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630750002823
+PASS  BO opens its seal: AAAB  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0xf668967a62006df1e44bac7616cc75e60add4e09", "answers": "AAAB", "score_now": 3}
+      [13:33:17] CY reveal_answers(Q1, BACB, cy-45c5a7aa6a858adf)  0xae8362a0b7f15e89e71e26017f81afc5f5a54a49a166797837ebac061ca5a37b  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630750002823
+PASS  CY opens its seal: BACB  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0xaae872c2f6afe3dc9843b8d1e7705114eba72c7a", "answers": "BACB", "score_now": 3}
+      [13:33:57] STRANGER dispute(Q1, 1, Venus is the closest plane)  0x7be899137dfb5e393f231a942ba06707e429ea26fd89b2f394bda5e85faff533  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  STRANGER tries to dispute: refused, only a taker disputes  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only a taker of Q1 may dispute its key
+      [13:34:41] SETTER dispute(Q1, 2, Ag is the symbol for silve)  0x392c654060d38783d7857517932bac8404830a0a9c22fa417379f16cf13425ff  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  SETTER tries to dispute its own key: refused  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only a taker of Q1 may dispute its key
+      [13:35:43] BO dispute(Q1, 1, Venus is the closest plane)  0xa32e19119fb021f35d212b0364eb0d37d3609d8fff5e885249bee8e0db8835e1  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78760500002823
+PASS  BO disputes question 1 ("Venus ... hottest"): mark 2, the key holds, BO's 0.05 GEN bond to SETTER  - 3 agree, 0 disagree, 2 idle  {"mark":"2","fp":"811d2d9076af63c4","outcome":"holds"}
+      [13:36:30] ANA dispute(Q1, 2, Ag is the symbol for silve)  0x9f80bfc6faba62f717a9976aae5869fc688b204d8da8cdf25519ebd12243db5f  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78760500002823
+PASS  ANA disputes question 2 (keyed Ag for gold): mark 2, wrong, void for everyone, ANA keeps her bond and takes a 0.1 GEN slice  - 3 agree, 0 disagree, 2 idle  {"mark":"2","fp":"4fa3fbf47868ef2d","outcome":"wrong"}
+      [13:37:21] CY dispute(Q1, 3, Both 7 and 11 are prime nu)  0x0851f8d9926cb051996429c16cffbc17a3b5d75dac7c2b0580c1df507dd7ff89  FINALIZED FINISHED_WITH_RETURN  3 agree, 1 disagree, 1 idle  fee 78760750002823
+PASS  CY disputes question 3 (7 and 11 both prime): mark M, ambiguous, void, CY takes a 0.1 GEN slice  - 3 agree, 1 disagree, 1 idle  {"mark":"M","fp":"6aee90db5202a690","outcome":"ambiguous"}
+      [13:38:01] CY dispute(Q1, 1, Mercury is right, but I wa)  0xacdc2c23254f96bd67c55c2d8b14653178e803381265667cf7978e6a524049ae  FINALIZED FINISHED_WITH_ERROR  4 agree, 0 disagree, 1 idle  fee 78628000003529
+PASS  CY disputes question 1 again: refused, each question is disputed once, no second roll  - 4 agree, 0 disagree, 1 idle  [EXPECTED] question 1 of Q1 was disputed already, in D1; each question is disputed once
+      [13:38:45] STRANGER finalize(Q1)  0x4a0bab020b996fb96f7d19a5939a1166383a93bc2010c8be6ea96892212e27e1  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  STRANGER tries to finalize inside the dispute window: refused  - 3 agree, 0 disagree, 2 idle  [EXPECTED] the dispute window of Q1 ends at 1795615802
+
+[13:38:45] ---- phase C: the window ends, settlement, the code read back, the views, the money
+      [13:38:46] waiting 1896 s, by the chain clock, for dispute_end of Q1 to pass
+      [14:11:02] STRANGER finalize(Q1)  0xc3ea39dbae42df805a3515a61f9f13667a522eea25a4faa17bf23b854c7d9aec  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630750002823
+PASS  STRANGER finalizes Q1: scored, 5 correct answers on the standing questions, 0.054 GEN each  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "settled": "scored", "total_correct": 5, "unit": "54000000000000000", "share": "0", "setter_paid": "230000000000000000", "void": 2}
+      [14:11:44] STRANGER claim(Q1)  0x53454b486cd92daf318edef662ae1dabd04d9984e01e4bbe992ddff70f471820  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  STRANGER tries to claim: refused, only a taker has a share  - 3 agree, 0 disagree, 2 idle  [EXPECTED] only a taker of Q1 has a share to claim
+      [14:12:27] ANA claim(Q1)  0xa194edd5606864bbc5de924841347277a1dcc8223c98dfe806e085ddf4a8c736  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630250002823
+PASS  ANA claims: score 2, 0.108 GEN into its credit  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0x8059d34b35adb664de1849a834e5c9bc695af617", "settled": "scored", "score": 2, "payout": "10800000000000
+      [14:13:08] BO claim(Q1)  0xa3af8b5d96976c18ab2a1b386675749777171865ad8e29539bf4bfed2d638706  FINALIZED FINISHED_WITH_RETURN  5 agree, 0 disagree, 0 idle  fee 78630250004235
+PASS  BO claims: score 1, 0.054 GEN into its credit  - 5 agree, 0 disagree, 0 idle  {"ok": true, "quiz": "Q1", "taker": "0xf668967a62006df1e44bac7616cc75e60add4e09", "settled": "scored", "score": 1, "payout": "54000000000000
+      [14:13:50] CY claim(Q1)  0x9e605b798ff97841861ec9a8d5721d80403db166fd5b52c3cc1437df0771e43d  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 78630250002823
+PASS  CY claims: score 2, 0.108 GEN into its credit  - 3 agree, 0 disagree, 2 idle  {"ok": true, "quiz": "Q1", "taker": "0xaae872c2f6afe3dc9843b8d1e7705114eba72c7a", "settled": "scored", "score": 2, "payout": "10800000000000
+      [14:14:32] ANA claim(Q1)  0xf808a253779dd77b2645749d0ea4ea79536e97755301d1f5d19901ecad0a8e9a  FINALIZED FINISHED_WITH_ERROR  3 agree, 0 disagree, 2 idle  fee 78628000002823
+PASS  ANA claims again: refused  - 3 agree, 0 disagree, 2 idle  [EXPECTED] this taker claimed its share of Q1 already
+PASS  the code deployed at 0xaF11AA533eD8048c70936Fdf0D06ada1b74FddC3 is byte for byte contracts/keyed.py  - 59788 bytes, sha256 99c94c8eeeec9983cea067a5e405ebfa9b82609bc86d2e3708798c38a9f34a6f
+PASS  quiz(Q1) reads settled: key BAAB, three takers, three disputes, two void, every share claimed  - {"key":"BAAB","void":2,"settled":"scored","unit":"54000000000000000","claimed_total":"270000000000000000"}
+PASS  question(Q1, 2) reads void, keyed A, disputed in D2, the validators' mark 2 (Au)  - {"quiz":"Q1","question":2,"stem":"What is the chemical symbol for the element gold?","options":["Ag","Au","Gd","Go"],"key":"A","tallies":[2,1,0,0],"void":true,"dispute":"D2","mark":"2","outcome":"wrong"}
+PASS  dispute_of(D3) keeps CY's reason word for word, the mark and the fingerprint  - {"mark":"M","fp":"6aee90db5202a690","outcome":"ambiguous"}
+PASS  rules() publishes the question word for word and the comparison
+PASS  before the withdrawals the contract holds exactly the credit it owes, nothing in escrow  - 850000000000000000 held, stats {"credit_total":"850000000000000000","escrow_total":"0"}
+      [14:15:29] SETTER withdraw()  0x7b8a109015973f2a9fb7aa7aa9e30fddb09d4e797193e5ac9cd3a8782468f943  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126305500002823
+PASS  SETTER withdraws 0.28 GEN of credit, and its wallet shows it, less the fee  - 3 agree, 0 disagree, 2 idle  delta 279873694499997177, want 279873694499997177
+      [14:16:12] ANA withdraw()  0x653d519d920ddb07b3f00f3f1e799db5a5a3a12b3919df3751018b3ea5017744  FINALIZED FINISHED_WITH_RETURN  4 agree, 0 disagree, 1 idle  fee 126305500003529
+PASS  ANA withdraws 0.258 GEN of credit, and its wallet shows it, less the fee  - 4 agree, 0 disagree, 1 idle  delta 257873694499996471, want 257873694499996471
+      [14:16:57] BO withdraw()  0xdda51234d51cab3cf759aed94dfb62371c74219e1ce85b2712aeba2c76560cd3  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126305500002823
+PASS  BO withdraws 0.054 GEN of credit, and its wallet shows it, less the fee  - 3 agree, 0 disagree, 2 idle  delta 53873694499997177, want 53873694499997177
+      [14:17:36] CY withdraw()  0x2f8e4daefcd84e5d5bc19e8c69ecf1f6e753fd47f4089f756b063a012c69732a  FINALIZED FINISHED_WITH_RETURN  3 agree, 0 disagree, 2 idle  fee 126305500002823
+PASS  CY withdraws 0.258 GEN of credit, and its wallet shows it, less the fee  - 3 agree, 0 disagree, 2 idle  delta 257873694499997177, want 257873694499997177
+PASS  the contract ends holding nothing, and stats() agrees: every deposit and fee went out to its owner  - 0 held, {"held":"0","deposited":"550000000000000000","withdrawn":"850000000000000000","returned":"250000000000000000"}
+PASS  every wallet ends where the money table says, less exactly the fees its own transactions paid  - SETTER -0.12080349425002541 (money -0.12, fees 0.000803494250025407)  ANA 0.10740177974997883 (money 0.108, fees 0.000598220250021173)  BO -0.09651959250001835 (money -0.096, fees 0.00051959250001835)  CY 0.10740177899997953 (money 0.108, fees 0.000598221000020467)  STRANGER -0.000645751750019761 (money 0, fees 0.000645751750019761)
+
+44 passed, 0 failed
+Keyed: 0xaF11AA533eD8048c70936Fdf0D06ada1b74FddC3  https://explorer-studio.genlayer.com/address/0xaF11AA533eD8048c70936Fdf0D06ada1b74FddC3
+transactions: 36 in 36 steps; sent a second time: none
+deploy           0x690be26c44d8ca606631191bcf0150f70abda356fee69e8562522e9401b23c19 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+depositSetter    0x5de0923f8ffbbe09c1b85b9e721d283c77fc9fbc45137084541c7291b8cc218f FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+deposit_ana      0x7d84b95000c20e383b919854605cd3645039b8cff9bce820e8919a6fd33cf63f FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+deposit_bo       0xde8e2b375cda63552d841303f52b4c8fd7a4ccdd685b425d85ddbd388bb9bbb3 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+deposit_cy       0x0cd051a6566faf2c125724552bc420c9d63a41926d02da1c7f9ca6057966d4bb FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+open             0xe8369acd2a0481081dce264ac37a22bd9eb38aa776f6f8da5f6caccd907987eb FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+enterSetter      0x2e7fe1fa4d19c237d8d833b669f1dc6e25ffbfcdf322e679802e6a1af6f5e3c5 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+enterCheap       0xd282f936b0cd7acafd60d304b5b9c26893f23625499364b9b020269b410de6eb FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+enter_ana        0x4cad96f25d56aa41f0fc354a31ba61dbf86539144c0bbe9f0d223cd28f8d76e5 FINALIZED FINISHED_WITH_RETURN 4 agree, 0 disagree, 1 idle
+enter_bo         0xaf011100cbde2424227d51f75d97d46da17055fcf269e215734af02e728489c9 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+enter_cy         0x8676a1e982cf599be7104e2940214f03581927da7c93e22908cfd23f2120cd53 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+revealEarly      0x9ca3921ea2ed20731d22b08ab18abe981288db0161b54d8465a45b90d7c2fc0f FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+revealStranger   0x1ce00c52955363f045113a3dc4415d6806a0907295975a6d64862b71e6687650 FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+enterLate        0xaf23424dbaf57c56a118dd1c707ea63ce91764b8f7b26f011dab336e9463e539 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+revealWrong      0x2fc2dfd57b0f3b2c7b08ff3930c829ffd32ea0a27bc8d5d50a306371a0a80958 FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+reveal           0x5a98e0e53051f5ddc7cb21ec22a2a058364bc8fd80928229d8d2330ddc1e13d2 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+open_ana         0x1ed6fa893a8f2966075c0429ba00872b5507c404e34d8a1434bce3456d38eb07 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+open_bo          0xdb4b2fe8ddc3fa3d639d43b9086474d427a57516960f7f516ce96a17edc91689 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+open_cy          0xae8362a0b7f15e89e71e26017f81afc5f5a54a49a166797837ebac061ca5a37b FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+disputeStranger  0x7be899137dfb5e393f231a942ba06707e429ea26fd89b2f394bda5e85faff533 FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+disputeSetter    0x392c654060d38783d7857517932bac8404830a0a9c22fa417379f16cf13425ff FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+dispute1         0xa32e19119fb021f35d212b0364eb0d37d3609d8fff5e885249bee8e0db8835e1 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+dispute2         0x9f80bfc6faba62f717a9976aae5869fc688b204d8da8cdf25519ebd12243db5f FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+dispute3         0x0851f8d9926cb051996429c16cffbc17a3b5d75dac7c2b0580c1df507dd7ff89 FINALIZED FINISHED_WITH_RETURN 3 agree, 1 disagree, 1 idle
+dispute1Again    0xacdc2c23254f96bd67c55c2d8b14653178e803381265667cf7978e6a524049ae FINALIZED FINISHED_WITH_ERROR 4 agree, 0 disagree, 1 idle
+finalizeEarly    0x4a0bab020b996fb96f7d19a5939a1166383a93bc2010c8be6ea96892212e27e1 FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+finalize         0xc3ea39dbae42df805a3515a61f9f13667a522eea25a4faa17bf23b854c7d9aec FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+claimStranger    0x53454b486cd92daf318edef662ae1dabd04d9984e01e4bbe992ddff70f471820 FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+claim_ana        0xa194edd5606864bbc5de924841347277a1dcc8223c98dfe806e085ddf4a8c736 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+claim_bo         0xa3af8b5d96976c18ab2a1b386675749777171865ad8e29539bf4bfed2d638706 FINALIZED FINISHED_WITH_RETURN 5 agree, 0 disagree, 0 idle
+claim_cy         0x9e605b798ff97841861ec9a8d5721d80403db166fd5b52c3cc1437df0771e43d FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+claimTwice       0xf808a253779dd77b2645749d0ea4ea79536e97755301d1f5d19901ecad0a8e9a FINALIZED FINISHED_WITH_ERROR 3 agree, 0 disagree, 2 idle
+withdraw_setter  0x7b8a109015973f2a9fb7aa7aa9e30fddb09d4e797193e5ac9cd3a8782468f943 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+withdraw_ana     0x653d519d920ddb07b3f00f3f1e799db5a5a3a12b3919df3751018b3ea5017744 FINALIZED FINISHED_WITH_RETURN 4 agree, 0 disagree, 1 idle
+withdraw_bo      0xdda51234d51cab3cf759aed94dfb62371c74219e1ce85b2712aeba2c76560cd3 FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
+withdraw_cy      0x2f8e4daefcd84e5d5bc19e8c69ecf1f6e753fd47f4089f756b063a012c69732a FINALIZED FINISHED_WITH_RETURN 3 agree, 0 disagree, 2 idle
